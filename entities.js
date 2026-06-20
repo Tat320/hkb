@@ -240,7 +240,7 @@ export function updateUnits(day){
     const dx=pa.X-w.x, dz=pa.Z-w.z; if(dx*dx+dz*dz>1) o.token.rotation.y=Math.atan2(dx,dz);
     if(u.cf){ const sc=0.6+clamp(s.s/2200,0,1.6); const fm=FORM[s.st]||FORM.attack; o.token.scale.set(sc*fm[0],1,sc*fm[1]); }
     const f=FAC[u.faction], focused=focusSet.has(u.id);
-    // every on-stage unit flies its kamon flag (the signature feature); focus only emphasises.
+    // every on-stage unit flies its national/service flag; focus only emphasises.
     o.flag.visible=true; o.flag.material.opacity=focused?1:0.5; o.finial.visible=focused;
     o.lbl.visible=focused; o.div.style.opacity=focused?(dead?0.65:1):0;   // text labels stay focus-only (no clutter)
     if(dead){ o.token.material.color.setHex(0x55585c); o.token.material.emissiveIntensity=focused?0.06:0.0;
