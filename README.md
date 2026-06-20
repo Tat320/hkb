@@ -15,7 +15,7 @@ The eighteen-day campaign plays itself as a directed sequence of shots over real
 movements, front lines, attack arrows, weather, and a day/night cycle, narrated bilingually (中／EN). Every
 frame below is the live engine rendering real elevation + satellite imagery; nothing is mocked up.
 
-![黃泥涌峽爭奪戰 — the camera orbiting the battle for Wong Nai Chung Gap, the hinge of the island fighting](docs/demo.gif)
+![A five-second cut from the self-playing documentary: the camera sweeps over the Wong Nai Chung Gap battle and flies on to the death of Brigadier Lawson, 19 December 1941](docs/demo.gif)
 
 <table>
   <tr>
