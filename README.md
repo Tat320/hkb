@@ -12,7 +12,6 @@
 [![content CC BY 4.0](https://img.shields.io/badge/content-CC_BY_4.0-blue)](https://creativecommons.org/licenses/by/4.0/)
 [![Three.js r128](https://img.shields.io/badge/Three.js-r128-000000)](https://threejs.org/)
 [![no build, runs offline](https://img.shields.io/badge/build-none-success)](#run-it-locally)
-[![GitHub stars](https://img.shields.io/github/stars/keithligh/battle-of-hong-kong-1941?style=social)](https://github.com/keithligh/battle-of-hong-kong-1941/stargazers)
 
 [![The live engine: a directed camera over real Hong Kong terrain during the fight for Wong Nai Chung Gap, with bilingual captions, troop-strength readouts, the legend and the day/night timeline transport](docs/demo.gif)](https://keithligh.github.io/battle-of-hong-kong-1941/)
 
