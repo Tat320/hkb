@@ -75,7 +75,7 @@ function pRisingSun16(c, X, Y, w, h, oxFrac){
   c.restore();
 }
 
-/* ---- small flag-emblem helpers (real flag elements, not crests) ----- */
+/* ---- small flag-emblem helpers (maple leaf · star · junk + hill) ----- */
 function mapleLeaf(c, x, y, r, col){ c.fillStyle = col; c.beginPath();
   const pts=[[0,-1],[.18,-.5],[.55,-.62],[.42,-.22],[.92,-.18],[.55,.05],[.78,.42],
     [.3,.32],[.34,.86],[0,.55],[-.34,.86],[-.3,.32],[-.78,.42],[-.55,.05],[-.92,-.18],

@@ -1,15 +1,15 @@
 /* =====================================================================
  *  data.js  —  scenario data for the Battle of Hong Kong 1941
  *  ---------------------------------------------------------------------
- *  Pure data, no logic. Consumed only by app.js via window.BATTLE_DATA.
+ *  Pure data, no logic. Consumed via window.BATTLE_DATA (config.js re-exports it as D).
  *  Facts compiled and cross-checked against the sources listed in notes.sources.
  *
  *  Coordinates are REAL WGS84 lng/lat (projected to scale via Web Mercator
- *  in app.js). Timeline day key `d` = day of December 1941 (8.0 … 26.0).
+ *  in projection.js). Timeline day key `d` = day of December 1941 (8.0 … 26.0).
  * ===================================================================== */
 window.BATTLE_DATA = (function () {
 
-  const JP = "jp", UK = "uk";   // faction ids; faction colours are defined in app.js FAC (which sets the CSS vars at boot)
+  const JP = "jp", UK = "uk";   // faction ids; faction colours are defined in config.js FAC (app.js pushes them into CSS vars at boot)
 
   /* -- geography (real lng/lat) ------------------------------------ */
   const geography = {

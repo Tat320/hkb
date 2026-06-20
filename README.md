@@ -56,11 +56,11 @@ Map tiles must be loaded over HTTP (same-origin) — opening `index.html` via `f
 - **Surface:** EOX *Sentinel-2 cloudless 2016* satellite imagery draped over the terrain.
 - **Direction:** a state-machine "Director" plays a fixed storyboard of shots; free-look pauses it.
 - Everything is data-driven from `data.js` (forces, dated movement tracks, front lines, weather,
-  storyboard, narration). `app.js` is the engine; `index.html` is the page.
+  storyboard, narration). `app.js` and its ES modules are the engine; `index.html` is the page.
 
 ## Licensing
 
-- **Code** (`app.js`, `data.js`, `index.html`, `tools/`): **MIT** — see [`LICENSE`](LICENSE).
+- **Code** (the `.js` source, `index.html`, `tools/`): **MIT** — see [`LICENSE`](LICENSE).
 - **Narration, scenario data & text content:** **CC BY 4.0** —
   <https://creativecommons.org/licenses/by/4.0/>.
 - **Bundled / fetched third-party software & data** (Three.js, Sentinel-2 imagery, SRTM/USGS

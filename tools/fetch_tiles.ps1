@@ -2,11 +2,11 @@
 # fetch_tiles.ps1 — download REAL Hong Kong terrain into lib/tiles/ (run once, offline thereafter)
 #   DEM : AWS open Terrarium terrain-RGB  (elev = R*256 + G + B/256 - 32768 m)  — no API key
 #   IMG : EOX Sentinel-2 cloudless 2016 (satellite, CC BY 4.0)  {z}/{y}/{x}, JPEG — no API key
-# Tile range is DERIVED from the bbox+zoom (single source of truth, mirrors app.js GEO).
+# Tile range is DERIVED from the bbox+zoom (single source of truth, mirrors config.js CFG.GEO).
 $ErrorActionPreference = "Stop"
 $ProgressPreference   = "SilentlyContinue"
 
-# --- battle bounding box + zoom (keep in sync with app.js GEO) -------------
+# --- battle bounding box + zoom (keep in sync with config.js CFG.GEO) ------
 $minLng = 113.88; $maxLng = 114.32; $minLat = 22.16; $maxLat = 22.57; $z = 13
 
 function LngToX([double]$lng,[int]$z){ [int][math]::Floor((($lng+180.0)/360.0)*[math]::Pow(2,$z)) }
