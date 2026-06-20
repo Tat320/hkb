@@ -13,8 +13,8 @@ export function fatal(e){
   const el=document.getElementById("err");
   el.style.display="block";
   el.textContent="⚠ 初始化失敗 / Initialization error:\n\n"+(e&&e.stack?e.stack:e)+
-    "\n\n（本作需以本機伺服器開啟：執行 `node tools/serve.js` 後開 http://localhost:5050 ，"+
-    "或用內建預覽。直接以 file:// 開啟會因瀏覽器安全限制無法讀取地形瓦片。）";
+    "\n\n（本作需透過 http(s) 伺服器開啟；直接以 file:// 開啟會因瀏覽器安全限制無法讀取地形瓦片。"+
+    "本機檢視可執行 `node tools/serve.js` 或使用內建預覽。）";
   const boot=document.getElementById("boot"); if(boot) boot.classList.add("gone");
   console.error(e);
 }
