@@ -213,7 +213,7 @@ window.BATTLE_DATA = (function () {
               {d:19,lng:114.180,lat:22.300,s:600,st:"dead"}, {d:21,lng:114.160,lat:22.300,s:300,st:"dead"} ] },
   ];
 
-  /* -- movement arrows (appear within ±0.7 day of `d`); [lng,lat] --- */
+  /* -- movement arrows (visibility window lives in entities.js updateArrows: ~0.6d before to ~1.1d after `d`); [lng,lat] --- */
   const arrows = [
     { d:8,  f:JP, from:[114.100,22.530], to:[114.120,22.440], label:"38D 渡深圳河南下", kind:"march" },
     { d:9,  f:JP, from:[114.140,22.410], to:[114.150,22.385], label:"土井部隊 夜襲城門", kind:"attack" },
